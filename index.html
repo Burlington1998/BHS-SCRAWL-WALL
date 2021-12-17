@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BHS SCRAW WALL</title>
+    
+    <link href="98.css" rel="stylesheet" type="text/css" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
+    <link href="bhs.jpg" rel="icon"/>
+  </head>
+  <body>
+    <img src="bubbles.gif" id="bubbles">
+    <div id="bhs"> 
+      <h3><a class="red">FREE</a> BHS ScrawlWall!</h3>
+    </div>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <p class="description">A BHS ScrawlWall is a free site extention that uses JavaScript 1.1 (Do you have it?) to allow students to communicate on any platform without fear of being spied on. Easily encrypt anything with a special key!</p>
+    <fieldset class="description">
+      <legend>Encrypt messages below!</legend>
+      <form autocomplete="off" id="encrypt">
+        <p>Password: <input id="set-pwd" type="text" required></p>
+        <p>Message:</p>
+        <textarea cols="50" rows="7" id="set-data" required></textarea>
+        <button>Encrypt!</button>
+      </form> 
+      <hr/>
+      <p>Encrypted message:</p>
+      <textarea cols="50" rows="5" id="emsg"></textarea>
+    </fieldset>
+    <fieldset class="description">
+      <legend>Decrypt messages below!</legend>
+      <form autocomplete="off" id="decrypt">
+        <p>Password: <input id="pwd" type="text" required></p>
+        <p>Message</p>
+        <textarea cols="50" rows="7" id="data" required></textarea>
+        <button>Decrypt!</button>
+      </form>
+      <hr/>
+      <p>Decrypted message:</p>
+      <textarea cols="50" rows="5" id="dmsg"></textarea>
+    </fieldset>
+    <i>BurlingtonFOSS/Burlington 1998 is not responsible for any misuse of this web application.</i>
+    
+    <script src="jquery.js"></script>
+    <script src="sjcl.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

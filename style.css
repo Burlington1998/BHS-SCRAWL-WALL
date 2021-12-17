@@ -1,0 +1,30 @@
+body {
+  background-color: #FDF53A;
+}
+
+textarea {
+  resize: none;
+}
+
+#bubbles {
+  top: 0px;
+  text-align: left;
+  position: fixed;
+}
+
+#bhs {
+  top: 0px;
+  left: 35px;
+  position: fixed;
+}
+
+.red {
+  color: red;
+}
+
+.description {
+  width: 400px;
+  color: #0000AA;
+  font-family: cursive;
+  position: relative;
+}
